@@ -1,0 +1,15 @@
+{
+  "name": "Compound Interest Calculator",
+  "version": "1.0.0",
+  "description": "This program is a Compound Interest Calculator that allows users to input their principal amount, annual interest rate, compound type, and the number of years for which they want to calculate the interest. The calculator supports various compounding intervals such as daily, weekly, monthly, and annually, including continuous compounding. After submitting the form, the program calculates the total amount of money earned and the compounded interest.",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": ["html", "css"],
+  "author": "Ives van Hoorne",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "11.2.0"
+  }
+}
