@@ -1,5 +1,3 @@
-# CMSI_2021_HW1_Compound_Interest_Calculator
-
 # COMPOUND INTEREST CALCULATOR:
 This web app is a compound interest calculator that allows users to input the following values:
 
