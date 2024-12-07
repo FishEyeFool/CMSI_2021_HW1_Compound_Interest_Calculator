@@ -1,0 +1,53 @@
+header {
+  background-image: linear-gradient(0deg, blanchedalmond, #ffd79a, #ffc267);
+  color: brown;
+  font-family: "Playfair Display", system-ui;
+  text-align: center;
+  text-shadow: 2px 2px 3px black;
+  margin: 10px;
+  padding: 1px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 8em;
+  background-color: beige;
+  border-style: solid;
+  border-color: black;
+  gap: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+
+body {
+  background-color: teal;
+  height: 100vh;
+  margin: 0;
+}
+
+footer {
+  background-color: blanchedalmond;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  font-family: "Playfair Display", system-ui;
+}
+
+#compoundTypeButton {
+  width: 100px;
+  height: 50px;
+  transition: width 2s, transform 2s;
+}
+
+#compoundTypeButton:hover {
+  width: 200px;
+  transform: rotate(360deg);
+}
+
+#interestForm {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  font-family: "Playfair Display", system-ui;
+  gap: 20px;
+}
