@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Compound Interest Calculator</title>
+    <link rel="stylesheet" href="interest_calculator.css" />
+    <script src="interest_calculator.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Compound Interest Calculator</h1>
+    </header>
+
+    <main>
+      <form id="interestForm" onsubmit="return false">
+        <!-- Use section for grouping related form elements -->
+        <section>
+          <label for="principalAmount">Principal: $</label>
+          <input type="number" id="principalAmount" step="0.01" />
+        </section>
+
+        <section>
+          <label for="annualRate">Annual Rate: %</label>
+          <input type="number" id="annualRate" step="0.001" />
+        </section>
+
+        <section>
+          <label for="compoundTypeButton">Compound Type:</label>
+          <select id="compoundTypeButton">
+            <option value="0">Continuously</option>
+            <option value="365">Daily (365)</option>
+            <option value="360">Daily (360)</option>
+            <option value="52">Weekly</option>
+            <option value="26">Biweekly</option>
+            <option value="24">Semimonthly</option>
+            <option value="12">Monthly</option>
+            <option value="6">Bimonthly</option>
+            <option value="4">Quarterly</option>
+            <option value="2">Semiannually</option>
+            <option value="1">Annually</option>
+          </select>
+        </section>
+
+        <section>
+          <label for="numOfYears"
+            >Number of Years: <br />ex. 1.5 yrs = 18 mo</label
+          >
+          <input type="number" id="numOfYears" step="0.01" />
+        </section>
+
+        <!-- Outputs for calculated interest -->
+        <section>
+          <output id="amountOfMoneyEarned"></output>
+          <output id="compoundedInterest"></output>
+        </section>
+      </form>
+
+      <!-- Added alt text to image for better accessibility -->
+      <figure>
+        <img
+          src="https://images.static.jeniusbank.com/81bfavdafg0o/7oKNPN3RqmSBPHQpeiPULv/1a4c1252852d9bbd62bc103f33068848/compound-interest-blog-jeniusbank-20230825-1280x721.webp"
+          width="300"
+          height="300"
+          alt="Cartoon illustration of compound interest"
+        />
+      </figure>
+    </main>
+
+    <footer>
+      <a
+        href="https://codesandbox.io/p/sandbox/cmsi2021-homework1-compondinterestcalculator-gabrielw-jthvd8?file=%2Findex.html%3A34%2C16"
+        id="Repo"
+      >
+        <label for="Repo">Code Sandbox Repo</label>
+      </a>
+    </footer>
+  </body>
+</html>
